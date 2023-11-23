@@ -1,0 +1,97 @@
+// Insert sample data into the users collection
+[
+    { 
+      user_id: 1,
+      username: "user1"
+    },
+    { 
+      user_id: 2,
+      username: "user2"
+    },
+
+  ]
+  
+// Insert sample data into the codekata collection
+[
+    { 
+      user_id: 1, 
+      problem_solved_count: 10
+    },
+    { 
+      user_id: 2, 
+      problem_solved_count: 15 
+    },
+]
+  
+  // Insert sample data into the attendance collection
+  [
+    { 
+      user_id: 1, 
+      date: ISODate("2022-10-01"),
+      status: "Present", 
+      task_submitted: true 
+    },
+    { 
+      user_id: 2,
+      date: ISODate("2022-10-01"), 
+      status: "Absent",
+      task_submitted: false 
+    },
+]
+  
+  // Insert sample data into the topics collection
+[
+    { 
+      topic_id: 1,
+      topic_name: "Topic1"
+    },
+    { 
+      topic_id: 2, 
+      topic_name: "Topic2" 
+    },
+  ]
+  
+  // Insert sample data into the tasks collection
+  db.tasks.insertMany([
+    { 
+      task_id: 1, 
+      topic_id: 1,
+      task_name: "Task1", 
+      date: ISODate("2022-10-15")
+    },
+    { 
+      task_id: 2, 
+      topic_id: 2, 
+      task_name: "Task2",
+      date: ISODate("2022-10-20")
+    },
+]
+  
+  // Insert sample data into the company_drives collection
+[
+    { 
+      drive_id: 1,
+      drive_name: "Drive1",
+      drive_date: ISODate("2022-10-25")
+    },
+    {
+      drive_id: 2, 
+      drive_name: "Drive2", 
+      drive_date: ISODate("2022-10-30") 
+    },
+]
+  
+  // Insert sample data into the mentors collection
+[
+    { 
+      mentor_id: 1,
+      mentor_name: "Mentor1",
+      mentee_count: 20
+     },
+    {
+       mentor_id: 2,
+       mentor_name: "Mentor2",
+       mentee_count: 10
+   },
+  ]
+  
